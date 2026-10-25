@@ -1,0 +1,519 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6400" height="5150" viewBox="0 0 6400 5150"><rect width="100%" height="100%" fill="white"/><text x="3200.0" y="77" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#172432">Government / State Scheme Eligibility Finder</text>
+<text x="3200.0" y="153" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#172432">Chen Notation ER Diagram</text>
+<polyline points="800.00,3950.00 800.00,3730.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="804.00,2650.00 804.00,3570.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="796.00,2650.00 796.00,3570.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="800.00,2550.00 800.00,2280.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="804.00,1100.00 804.00,2120.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="796.00,1100.00 796.00,2120.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="950.00,2600.00 1380.00,2600.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="2090.00,2604.00 1720.00,2604.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="2090.00,2596.00 1720.00,2596.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3270.00,2600.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="2510.00,2596.00 2930.00,2596.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="2510.00,2604.00 2930.00,2604.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="2300.00,2550.00 2300.00,2180.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="2304.00,1100.00 2304.00,2020.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="2296.00,1100.00 2296.00,2020.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3900.00,2650.00 3900.00,3570.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3896.00,4150.00 3896.00,3730.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3904.00,4150.00 3904.00,3730.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="4230.00,4200.00 4530.00,4200.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="5235.00,4204.00 4870.00,4204.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="5235.00,4196.00 4870.00,4196.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4530.00,2600.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="5225.00,2604.00 4870.00,2604.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="5225.00,2596.00 4870.00,2596.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3951.61,2550.00 4644.42,1878.84" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="5451.17,1102.87 4758.36,1774.03" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="5445.60,1097.13 4752.80,1768.28" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3900.00,2550.00 3900.00,2230.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3904.00,1750.00 3904.00,2070.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3896.00,1750.00 3896.00,2070.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3900.00,950.00 3900.00,1170.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3896.00,1650.00 3896.00,1330.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="3904.00,1650.00 3904.00,1330.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="4090.00,875.00 4200.00,875.00 4200.00,720.00 4500.00,720.00 4500.00,820.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="4090.00,925.00 4200.00,925.00 4200.00,1100.00 4500.00,1100.00 4500.00,980.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="950.00,2570.00 1700.00,2290.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="1980.00,1050.00 1700.00,1050.00 1700.00,2110.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,280.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,360.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,440.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,520.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,600.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,680.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,760.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,840.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,920.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1000.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1080.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1160.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1240.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1320.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1400.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1480.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1560.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1640.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1720.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="610.00,1050.00 470.00,1800.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,280.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,360.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,440.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,520.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,600.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,680.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,760.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,840.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,920.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1000.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1080.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1160.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1240.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1320.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1400.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1480.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1560.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1640.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1720.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="650.00,2600.00 460.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="650.00,2600.00 460.00,2980.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="650.00,2600.00 460.00,3140.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="650.00,2600.00 460.00,3300.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="950.00,2600.00 1140.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="950.00,2600.00 1140.00,2980.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="950.00,2600.00 1140.00,3140.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="800.00,4050.00 350.00,4315.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="800.00,4050.00 800.00,4315.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="800.00,4050.00 1250.00,4315.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2090.00,2600.00 2030.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2090.00,2600.00 2030.00,2980.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2090.00,2600.00 2030.00,3140.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2090.00,2600.00 2030.00,3300.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2090.00,2600.00 2030.00,3460.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2580.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2580.00,2980.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2580.00,3140.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2580.00,3300.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2580.00,3460.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2300.00,1000.00 1770.00,535.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2300.00,1000.00 2000.00,535.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2300.00,1000.00 2230.00,535.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2300.00,1000.00 2460.00,535.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2300.00,1000.00 2690.00,535.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2300.00,1000.00 2920.00,535.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2300.00,1000.00 3150.00,535.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,2920.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3020.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3120.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3220.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3320.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3420.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3520.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3620.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3720.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3570.00,3820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,2920.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3020.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3120.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3220.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3320.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3420.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3520.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3620.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="4090.00,2600.00 4230.00,3720.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,850.00 3300.00,435.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,850.00 3630.00,435.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,850.00 3960.00,435.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,850.00 4290.00,435.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,850.00 4620.00,435.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3600.00,1700.00 3550.00,1635.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3600.00,1700.00 3550.00,1765.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5210.00,1050.00 5180.00,380.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5210.00,1050.00 5180.00,540.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5210.00,1050.00 5180.00,700.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5210.00,1050.00 5180.00,860.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5790.00,1050.00 5920.00,380.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5790.00,1050.00 5920.00,540.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5790.00,1050.00 5920.00,700.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5790.00,1050.00 5920.00,860.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5225.00,2600.00 5150.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5225.00,2600.00 5150.00,3000.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5225.00,2600.00 5150.00,3180.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5775.00,2600.00 5850.00,2820.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5775.00,2600.00 5850.00,3000.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,4250.00 3000.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,4250.00 3300.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,4250.00 3600.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,4250.00 3900.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,4250.00 4200.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3900.00,4250.00 4500.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4150.00 4820.00,3895.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4150.00 5140.00,3895.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4150.00 5460.00,3895.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4150.00 5780.00,3895.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4150.00 6100.00,3895.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4250.00 4950.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4250.00 5320.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4250.00 5690.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5500.00,4250.00 6060.00,4465.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="800.00,1000.00 800.00,385.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<rect x="610.0" y="1000.0" width="380" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="800" y="1050" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">USER_PROFILES</text>
+<rect x="650.0" y="2550.0" width="300" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="800" y="2600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">USERS</text>
+<rect x="650.0" y="3950.0" width="300" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="800" y="4000" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">ROLES</text>
+<rect x="2090.0" y="2550.0" width="420" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="2300" y="2600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">APPLICATIONS</text>
+<rect x="1980.0" y="1000.0" width="640" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="2300" y="1050" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">APPLICATION_STATUS_LOG</text>
+<rect x="3710.0" y="2550.0" width="380" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="3900" y="2600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">SCHEMES</text>
+<rect x="3710.0" y="850.0" width="380" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="3900" y="900" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">CATEGORIES</text>
+<rect x="3600.0" y="1650.0" width="600" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="3900" y="1700" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">SCHEME_CATEGORIES</text>
+<rect x="5210.0" y="1000.0" width="580" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="5500" y="1050" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">SCHEME_EMBEDDINGS</text>
+<rect x="5225.0" y="2550.0" width="550" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="5500" y="2600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">SCHEME_DOCUMENTS</text>
+<rect x="3570.0" y="4150.0" width="660" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="3900" y="4200" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">ELIGIBILITY_RULE_GROUPS</text>
+<rect x="5235.0" y="4150.0" width="530" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="5500" y="4200" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">ELIGIBILITY_RULES</text>
+<polyline points="630.00,3650.00 800.00,3570.00 970.00,3650.00 800.00,3730.00 630.00,3650.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="630,3650 800,3570 970,3650 800,3730" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="800" y="3650" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">ASSIGNS</text>
+<polyline points="630.00,2200.00 800.00,2120.00 970.00,2200.00 800.00,2280.00 630.00,2200.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="630,2200 800,2120 970,2200 800,2280" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="800" y="2200" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">HAS</text>
+<polyline points="1380.00,2600.00 1550.00,2520.00 1720.00,2600.00 1550.00,2680.00 1380.00,2600.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1380,2600 1550,2520 1720,2600 1550,2680" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="1550" y="2600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">SUBMITS</text>
+<polyline points="2930.00,2600.00 3100.00,2520.00 3270.00,2600.00 3100.00,2680.00 2930.00,2600.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2930,2600 3100,2520 3270,2600 3100,2680" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="3100" y="2600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">RECEIVES</text>
+<polyline points="2130.00,2100.00 2300.00,2020.00 2470.00,2100.00 2300.00,2180.00 2130.00,2100.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2130,2100 2300,2020 2470,2100 2300,2180" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="2300" y="2100" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">GENERATES</text>
+<polyline points="3730.00,3650.00 3900.00,3570.00 4070.00,3650.00 3900.00,3730.00 3730.00,3650.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="3730,3650 3900,3570 4070,3650 3900,3730" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="3900" y="3650" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">HAS</text>
+<polyline points="4530.00,4200.00 4700.00,4120.00 4870.00,4200.00 4700.00,4280.00 4530.00,4200.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="4530,4200 4700,4120 4870,4200 4700,4280" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="4700" y="4200" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">CONTAINS</text>
+<polyline points="4530.00,2600.00 4700.00,2520.00 4870.00,2600.00 4700.00,2680.00 4530.00,2600.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="4530,2600 4700,2520 4870,2600 4700,2680" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="4700" y="2600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">REQUIRES</text>
+<polyline points="4530.00,1825.00 4700.00,1745.00 4870.00,1825.00 4700.00,1905.00 4530.00,1825.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="4530,1825 4700,1745 4870,1825 4700,1905" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="4700" y="1825" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">HAS</text>
+<polyline points="3730.00,2150.00 3900.00,2070.00 4070.00,2150.00 3900.00,2230.00 3730.00,2150.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="3730,2150 3900,2070 4070,2150 3900,2230" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="3900" y="2150" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">HAS_LINK</text>
+<polyline points="3730.00,1250.00 3900.00,1170.00 4070.00,1250.00 3900.00,1330.00 3730.00,1250.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="3730,1250 3900,1170 4070,1250 3900,1330" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="3900" y="1250" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">CLASSIFIES</text>
+<polyline points="4330.00,900.00 4500.00,820.00 4670.00,900.00 4500.00,980.00 4330.00,900.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="4330,900 4500,820 4670,900 4500,980" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="4500" y="900" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">PARENT_OF</text>
+<polyline points="1450.00,2200.00 1700.00,2110.00 1950.00,2200.00 1700.00,2290.00 1450.00,2200.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1450,2200 1700,2110 1950,2200 1700,2290" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="1700" y="2200" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">CHANGES_STATUS</text>
+<ellipse cx="250" cy="280" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="280" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">profile_id</text>
+<polyline points="195.50,292.72 304.50,292.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="250" cy="360" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="360" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">user_id (FK)</text>
+<ellipse cx="250" cy="440" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="440" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">date_of_birth</text>
+<ellipse cx="250" cy="520" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="520" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">gender</text>
+<ellipse cx="250" cy="600" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">domicile_state</text>
+<ellipse cx="250" cy="680" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="680" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">district</text>
+<ellipse cx="250" cy="760" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="760" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">residence_type</text>
+<ellipse cx="250" cy="840" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="840" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">social_category</text>
+<ellipse cx="250" cy="920" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="920" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">minority_status</text>
+<ellipse cx="250" cy="1000" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1000" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">disability_status</text>
+<ellipse cx="250" cy="1080" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1080" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">disability_percentage</text>
+<ellipse cx="250" cy="1160" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1160" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">annual_family_income</text>
+<ellipse cx="250" cy="1240" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1240" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">current_course</text>
+<ellipse cx="250" cy="1320" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1320" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">degree_level</text>
+<ellipse cx="250" cy="1400" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1400" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">year_of_study</text>
+<ellipse cx="250" cy="1480" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1480" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">institution_name</text>
+<ellipse cx="250" cy="1560" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1560" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">institution_approval_body</text>
+<ellipse cx="250" cy="1640" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1640" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">marks_percentage</text>
+<ellipse cx="250" cy="1720" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1720" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">cgpa</text>
+<ellipse cx="250" cy="1800" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="1800" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">class_12_percentage</text>
+<ellipse cx="1350" cy="280" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="280" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">employment_status</text>
+<ellipse cx="1350" cy="360" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="360" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">unemployment_days</text>
+<ellipse cx="1350" cy="440" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="440" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">self_employed</text>
+<ellipse cx="1350" cy="520" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="520" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">artisan_status</text>
+<ellipse cx="1350" cy="600" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="600" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">weaver_status</text>
+<ellipse cx="1350" cy="680" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="680" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">training_status</text>
+<ellipse cx="1350" cy="760" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="760" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">parent_occupation</text>
+<ellipse cx="1350" cy="840" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="840" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">parent_service_status</text>
+<ellipse cx="1350" cy="920" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="920" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">parent_martyred_status</text>
+<ellipse cx="1350" cy="1000" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1000" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">orphan_status</text>
+<ellipse cx="1350" cy="1080" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1080" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">parental_death_covid</text>
+<ellipse cx="1350" cy="1160" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1160" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">other_scholarship</text>
+<ellipse cx="1350" cy="1240" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1240" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">currently_studying</text>
+<ellipse cx="1350" cy="1320" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1320" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">hosteller</text>
+<ellipse cx="1350" cy="1400" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1400" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">hostel_available</text>
+<ellipse cx="1350" cy="1480" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1480" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">distance_km</text>
+<ellipse cx="1350" cy="1560" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1560" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">beneficiary_siblings</text>
+<ellipse cx="1350" cy="1640" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1640" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">created_at</text>
+<ellipse cx="1350" cy="1720" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1720" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">updated_at</text>
+<ellipse cx="250" cy="2820" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">user_id</text>
+<polyline points="207.50,2832.72 292.50,2832.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="250" cy="2980" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="2980" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">role_id (FK)</text>
+<ellipse cx="250" cy="3140" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="3140" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">full_name</text>
+<ellipse cx="250" cy="3300" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="250" y="3300" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">email</text>
+<ellipse cx="1350" cy="2820" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">password_hash</text>
+<ellipse cx="1350" cy="2980" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="2980" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">is_active</text>
+<ellipse cx="1350" cy="3140" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="3140" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">created_at</text>
+<ellipse cx="350" cy="4350" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="350" y="4350" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">role_id</text>
+<polyline points="310.50,4362.72 389.50,4362.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="800" cy="4350" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="800" y="4350" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">role_name</text>
+<ellipse cx="1250" cy="4350" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1250" y="4350" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">description</text>
+<ellipse cx="1820" cy="2820" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1820" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">application_id</text>
+<polyline points="1738.50,2832.72 1901.50,2832.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="1820" cy="2980" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1820" y="2980" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">user_id (FK)</text>
+<ellipse cx="1820" cy="3140" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1820" y="3140" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_id (FK)</text>
+<ellipse cx="1820" cy="3300" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1820" y="3300" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">applied_at</text>
+<ellipse cx="1820" cy="3460" rx="210" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1820" y="3460" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">current_status</text>
+<ellipse cx="2800" cy="2820" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">eligibility_result</text>
+<ellipse cx="2800" cy="2980" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="2980" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">eligibility_reason</text>
+<ellipse cx="2800" cy="3140" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="3140" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">eligibility_checked_at</text>
+<ellipse cx="2800" cy="3300" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="3300" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">created_at</text>
+<ellipse cx="2800" cy="3460" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="3460" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">updated_at</text>
+<ellipse cx="1770" cy="500" rx="110" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1770" y="500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">log_id</text>
+<polyline points="1734.00,512.72 1806.00,512.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="2000" cy="500" rx="110" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2000" y="500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">application_id (FK)</text>
+<ellipse cx="2230" cy="500" rx="110" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2230" y="500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">old_status</text>
+<ellipse cx="2460" cy="500" rx="110" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2460" y="500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">new_status</text>
+<ellipse cx="2690" cy="500" rx="110" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2690" y="500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">changed_at</text>
+<ellipse cx="2920" cy="500" rx="110" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2920" y="500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">changed_by (FK)</text>
+<ellipse cx="3150" cy="500" rx="110" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3150" y="500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">remarks</text>
+<ellipse cx="3350" cy="2820" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">scheme_id</text>
+<polyline points="3288.50,2832.72 3411.50,2832.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="3350" cy="2920" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="2920" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_code</text>
+<ellipse cx="3350" cy="3020" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3020" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_name</text>
+<ellipse cx="3350" cy="3120" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3120" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">government_level</text>
+<ellipse cx="3350" cy="3220" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3220" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">state_name</text>
+<ellipse cx="3350" cy="3320" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3320" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">department</text>
+<ellipse cx="3350" cy="3420" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3420" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_type</text>
+<ellipse cx="3350" cy="3520" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3520" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">description</text>
+<ellipse cx="3350" cy="3620" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3620" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">benefit_summary</text>
+<ellipse cx="3350" cy="3720" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3720" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">application_mode</text>
+<ellipse cx="3350" cy="3820" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">application_url</text>
+<ellipse cx="4450" cy="2820" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">source_url</text>
+<ellipse cx="4450" cy="2920" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="2920" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">academic_year</text>
+<ellipse cx="4450" cy="3020" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3020" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">application_start_date</text>
+<ellipse cx="4450" cy="3120" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3120" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">application_deadline</text>
+<ellipse cx="4450" cy="3220" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3220" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_status</text>
+<ellipse cx="4450" cy="3320" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3320" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">verification_status</text>
+<ellipse cx="4450" cy="3420" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3420" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">last_verified_date</text>
+<ellipse cx="4450" cy="3520" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3520" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">is_active</text>
+<ellipse cx="4450" cy="3620" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3620" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">created_at</text>
+<ellipse cx="4450" cy="3720" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4450" y="3720" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">updated_at</text>
+<ellipse cx="3300" cy="400" rx="155" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3300" y="400" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">category_id</text>
+<polyline points="3233.00,412.72 3367.00,412.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="3630" cy="400" rx="155" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3630" y="400" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">category_name</text>
+<ellipse cx="3960" cy="400" rx="155" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3960" y="400" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">parent_category_id (FK)</text>
+<ellipse cx="4290" cy="400" rx="155" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4290" y="400" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">description</text>
+<ellipse cx="4620" cy="400" rx="155" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4620" y="400" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">created_at</text>
+<ellipse cx="3350" cy="1635" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="1635" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">scheme_id (FK)</text>
+<polyline points="3261.00,1647.72 3439.00,1647.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="3350" cy="1765" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="1765" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">category_id (FK)</text>
+<polyline points="3255.50,1777.72 3444.50,1777.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="5000" cy="380" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5000" y="380" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">embedding_id</text>
+<polyline points="4918.00,392.72 5082.00,392.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="5000" cy="540" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5000" y="540" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_id (FK)</text>
+<ellipse cx="5000" cy="700" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5000" y="700" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">searchable_text</text>
+<ellipse cx="5000" cy="860" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5000" y="860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">model_name</text>
+<ellipse cx="6100" cy="380" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6100" y="380" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">model_version</text>
+<ellipse cx="6100" cy="540" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6100" y="540" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">embedding</text>
+<ellipse cx="6100" cy="700" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6100" y="700" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">created_at</text>
+<ellipse cx="6100" cy="860" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6100" y="860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">updated_at</text>
+<ellipse cx="4950" cy="2820" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4950" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">document_id</text>
+<polyline points="4875.00,2832.72 5025.00,2832.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="4950" cy="3000" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4950" y="3000" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_id (FK)</text>
+<ellipse cx="4950" cy="3180" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4950" y="3180" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">document_name</text>
+<ellipse cx="6050" cy="2820" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6050" y="2820" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">is_mandatory</text>
+<ellipse cx="6050" cy="3000" rx="200" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6050" y="3000" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">notes</text>
+<ellipse cx="3000" cy="4500" rx="140" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3000" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">group_id</text>
+<polyline points="2948.00,4512.72 3052.00,4512.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="3300" cy="4500" rx="140" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3300" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">scheme_id (FK)</text>
+<ellipse cx="3600" cy="4500" rx="140" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3600" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">group_name</text>
+<ellipse cx="3900" cy="4500" rx="140" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3900" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">group_order</text>
+<ellipse cx="4200" cy="4500" rx="140" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4200" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">is_active</text>
+<ellipse cx="4500" cy="4500" rx="140" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4500" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">created_at</text>
+<ellipse cx="4820" cy="3860" rx="150" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4820" y="3860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">rule_id</text>
+<polyline points="4780.50,3872.72 4859.50,3872.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="5140" cy="3860" rx="150" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5140" y="3860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">group_id (FK)</text>
+<ellipse cx="5460" cy="3860" rx="150" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5460" y="3860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">attribute_name</text>
+<ellipse cx="5780" cy="3860" rx="150" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5780" y="3860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">operator</text>
+<ellipse cx="6100" cy="3860" rx="150" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6100" y="3860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">value_type</text>
+<ellipse cx="4950" cy="4500" rx="165" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="4950" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">numeric_value</text>
+<ellipse cx="5320" cy="4500" rx="165" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5320" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">text_value</text>
+<ellipse cx="5690" cy="4500" rx="165" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="5690" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">boolean_value</text>
+<ellipse cx="6060" cy="4500" rx="165" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6060" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">failure_message</text>
+<ellipse cx="800" cy="350" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="3" stroke-dasharray="17 11"/>
+<text x="800" y="350" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">age</text>
+<text x="878.0" y="3884.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="878.0" y="2926.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="878.0" y="2469.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,1)</text>
+<text x="878.0" y="1406.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="1079.0" y="2568.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="1979.0" y="2568.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="3578.0" y="2568.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="2636.0" y="2568.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="2378.0" y="2439.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="2378.0" y="1376.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="3978.0" y="2926.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="3978.0" y="4024.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="4320.0" y="4168.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="5125.5" y="4168.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="4222.0" y="2568.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="5118.5" y="2568.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="4159.454702756148" y="2316.653256704981" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,1)</text>
+<text x="5240.545297243851" y="1269.3467432950192" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="3978.0" y="2454.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="3978.0" y="1846.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="3978.0" y="1016.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="3978.0" y="1554.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="4350" y="685" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">parent (0,N)</text>
+<text x="4350" y="1135" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">child (0,1)</text>
+<text x="1160" y="2435" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<text x="1850" y="1010" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,1)</text>
+<polyline points="180.00,4690.00 6220.00,4690.00" fill="none" stroke="#b7c5ce" stroke-width="2" stroke-linejoin="round"/>
+<text x="3200" y="4735" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">NOTATION AND SCHEMA CONSTRAINTS</text>
+<text x="3200" y="4790" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172432">Rectangle = entity | Diamond = relationship | Oval = attribute | Underline = primary key | (FK) = foreign key | Dashed oval = derived</text>
+<text x="3200" y="4835" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172432">(min,max) is the number of relationship instances per entity instance. Double line = total participation; single line = partial participation.</text>
+<text x="3200" y="4885" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">SCHEME_CATEGORIES: composite PK (scheme_id, category_id). APPLICATIONS: UNIQUE (user_id, scheme_id).</text>
+<text x="3200" y="4930" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">USER_PROFILES.user_id and SCHEME_EMBEDDINGS.scheme_id are UNIQUE. changed_by and parent_category_id are nullable.</text>
+<text x="3200" y="4975" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">Applications may have zero log records. Category CHECK prevents self-parenting; the supplied DDL does not prevent multi-category cycles.</text>
+<text x="3200" y="5020" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">Eligibility evaluation: AND within a rule group; OR between groups. age is derived from date_of_birth at the eligibility reference date.</text>
+<text x="3200" y="5075" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#415569">Verified against the supplied 12-table PostgreSQL DDL. This diagram documents the schema; no database commands were executed.</text></svg>
