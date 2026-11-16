@@ -1,0 +1,20 @@
+services:
+  db:
+    image: pgvector/pgvector:pg18
+    container_name: scheme-postgres
+
+    environment:
+      POSTGRES_DB: scheme_finder
+      POSTGRES_USER: scheme_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+
+    ports:
+      - "127.0.0.1:5432:5432"
+
+    volumes:
+      - scheme_pgdata:/var/lib/postgresql
+
+    restart: unless-stopped
+
+volumes:
+  scheme_pgdata:
