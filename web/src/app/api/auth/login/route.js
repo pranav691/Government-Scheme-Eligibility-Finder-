@@ -2,9 +2,19 @@ import bcrypt from "bcryptjs";
 
 import authPool from "@/lib/auth-db";
 import { createSession } from "@/lib/session";
+import { clientKey, rateLimit, tooManyRequests } from "@/lib/rate-limit";
+
+// Valid bcrypt hash (cost 10) of a random string; used only to keep
+// login timing uniform for unknown emails.
+const DUMMY_HASH =
+  "$2b$10$X1zQMZBR9Az5n6JOQ1jJyO6fhc/YBe5ddriYPlRqxfsAuSuugkQlS";
 
 
 export async function POST(request) {
+  // 10 sign-in attempts per minute per client.
+  const limit = rateLimit(`login:${clientKey(request)}`, 10, 60_000);
+  if (limit.limited) return tooManyRequests(limit.retryAfter);
+
   try {
     const body = await request.json();
 
@@ -58,36 +68,17 @@ export async function POST(request) {
       [email]
     );
 
-    if (result.rowCount !== 1) {
-      return Response.json(
-        {
-          success: false,
-          error: "Invalid email or password.",
-        },
-        { status: 401 }
-      );
-    }
+    const user = result.rowCount === 1 ? result.rows[0] : null;
 
-    const user = result.rows[0];
-
-    // Disabled users cannot sign in
-    if (!user.is_active) {
-      return Response.json(
-        {
-          success: false,
-          error: "Invalid email or password.",
-        },
-        { status: 401 }
-      );
-    }
-
-    // Compare entered password with bcrypt hash
+    // Always run one bcrypt comparison, even for unknown emails, so the
+    // response time does not reveal whether an account exists.
     const passwordMatches = await bcrypt.compare(
       password,
-      user.password_hash
+      user ? user.password_hash : DUMMY_HASH
     );
 
-    if (!passwordMatches) {
+    // Unknown user, wrong password and disabled account all look the same.
+    if (!user || !passwordMatches || !user.is_active) {
       return Response.json(
         {
           success: false,

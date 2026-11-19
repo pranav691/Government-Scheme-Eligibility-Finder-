@@ -2,7 +2,11 @@ import pg from "pg";
 
 const { Pool } = pg;
 
-const studentPool = new Pool({
+const globalForPool = globalThis;
+
+const studentPool =
+  globalForPool.__studentPool ||
+  new Pool({
   host: process.env.STUDENT_DB_HOST,
   port: Number(process.env.STUDENT_DB_PORT || 5432),
   database: process.env.STUDENT_DB_NAME,
@@ -14,6 +18,8 @@ const studentPool = new Pool({
   connectionTimeoutMillis: 5000,
   statement_timeout: 5000,
 });
+
+globalForPool.__studentPool = studentPool;
 
 /**
  * Run database work as one specific student.

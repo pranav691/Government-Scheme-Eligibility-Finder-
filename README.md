@@ -157,8 +157,20 @@ type*.
 - **Defence in depth:** web pages check the role (redirect), API routes
   check the role (`401` / `403`), and the database enforces grants, RLS and
   constraints even if the web layer were bypassed.
-- **Audit trail:** a trigger records every application status change and
-  the user who made it.
+- **Status workflow in the database:** `22_security_hardening.sql` makes the
+  trigger enforce the allowed transitions (draft → submitted → under_review →
+  approved / rejected, plus withdrawn). Students may only submit or withdraw,
+  officers may only review / approve / reject, and a student submission is
+  re-checked by `evaluate_eligibility()` inside the trigger. Students also
+  have column-level `UPDATE` rights only, so they cannot edit their own
+  status or the officer-verified renewal evidence.
+- **Audit trail:** the same trigger records every application status change
+  and the user who made it.
+- **Web hardening:** `src/proxy.js` rejects cross-site state-changing
+  requests (Origin check); login and search are rate limited; every request's
+  session is re-checked against the database, so a deactivated user or changed
+  role takes effect immediately; login takes the same time for unknown
+  emails.
 - **Rule integrity:** a composite foreign key and a CHECK constraint stop
   admins from saving rules the eligibility function cannot evaluate.
 - **Safe links:** scheme links are shown only for approved government
@@ -190,7 +202,8 @@ type*.
 │   │   ├── 18_rule_attribute_catalog.sql
 │   │   ├── 19_row_level_security.sql
 │   │   ├── 20_demo_passwords.sql
-│   │   └── 21_viva_demo_commands.sql   one ordered script for the viva
+│   │   ├── 21_viva_demo_commands.sql   one ordered script for the viva
+│   │   └── 22_security_hardening.sql   column grants + workflow trigger
 │   └── vector/
 │       ├── requirements.txt
 │       ├── generate_embeddings.py      create / refresh scheme vectors
@@ -244,6 +257,7 @@ Connect as `scheme_user` to `scheme_finder` and run, **in this order**:
 | 10 | `18_rule_attribute_catalog.sql` | |
 | 11 | `19_row_level_security.sql` | |
 | 12 | `20_demo_passwords.sql` | Sets the demo password |
+| 13 | `22_security_hardening.sql` | Column privileges + status workflow trigger |
 
 `06` and `07` are demonstration scripts and can be run at any time.
 
@@ -300,7 +314,8 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ## Demo accounts
 
 After `20_demo_passwords.sql`, every seeded account uses the password
-**`Demo@1234`** (local demo data only).
+**`Demo@1234`** (local demo data only), unless you changed that account's
+password afterwards.
 
 | Role | Email |
 |---|---|
@@ -364,3 +379,18 @@ Suggested web demo flow:
 
 *Scheme data is for academic demonstration only. Always confirm
 eligibility, benefits and deadlines on the official scheme website.*
+
+---
+
+## Known limitations
+
+- **Renewal evidence:** rules on `previous_award_verified` and
+  `attendance_percentage` are officer-verified evidence. The database and the
+  rule engine support them, but the web UI has no screen for officers to
+  record them yet, so renewal-only rules show "needs review". Fresh
+  applications are unaffected.
+- **Rate limiting** is in memory (single server). Use a shared store such as
+  Redis if the app is ever scaled out.
+- **Embeddings** are refreshed automatically when an admin creates or edits a
+  scheme, but only if the embedding service is running; otherwise run
+  `generate_embeddings.py`.

@@ -1,6 +1,8 @@
 import { cookies } from "next/headers";
 import { SignJWT, jwtVerify } from "jose";
 
+import authPool from "@/lib/auth-db";
+
 const COOKIE_NAME = "scheme_session";
 const SESSION_DURATION_SECONDS = 7 * 24 * 60 * 60; // 7 days
 
@@ -68,7 +70,37 @@ export async function getSession() {
     return null;
   }
 
-  return verifySessionToken(token);
+  const payload = await verifySessionToken(token);
+
+  if (!payload) {
+    return null;
+  }
+
+  // The token is only a signed claim. Confirm against the database that the
+  // account still exists, is still active, and still has the same role, so a
+  // deactivated user or a changed role takes effect immediately.
+  try {
+    const result = await authPool.query(
+      `
+        SELECT u.is_active, r.role_name
+        FROM users AS u
+        JOIN roles AS r ON r.role_id = u.role_id
+        WHERE u.user_id = $1
+      `,
+      [Number(payload.userId)]
+    );
+
+    const row = result.rows[0];
+
+    if (!row || !row.is_active || row.role_name !== payload.role) {
+      return null;
+    }
+  } catch (error) {
+    console.error("Session verification error:", error);
+    return null;
+  }
+
+  return payload;
 }
 
 // Logout

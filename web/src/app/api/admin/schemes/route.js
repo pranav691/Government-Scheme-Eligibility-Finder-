@@ -1,5 +1,7 @@
 import adminPool from "@/lib/admin-db";
 import { getSession } from "@/lib/session";
+import { cleanDate } from "@/lib/dates";
+import { refreshSchemeEmbedding } from "@/lib/embeddings";
 
 export async function POST(request) {
   try {
@@ -133,17 +135,21 @@ export async function POST(request) {
         body.application_url?.trim() || null,
         body.source_url?.trim() || null,
         body.academic_year?.trim() || null,
-        body.application_start_date || null,
-        body.application_deadline || null,
+        cleanDate(body.application_start_date),
+        cleanDate(body.application_deadline),
         schemeStatus,
         verificationStatus,
       ]
     );
 
+    const embedded = await refreshSchemeEmbedding(result.rows[0].scheme_code);
+
     return Response.json(
       {
         success: true,
-        message: "Scheme created successfully.",
+        message: embedded
+          ? "Scheme created successfully."
+          : "Scheme created. Semantic search will include it once the embedding service has run.",
         scheme: result.rows[0],
       },
       { status: 201 }

@@ -2,7 +2,11 @@ import pg from "pg";
 
 const { Pool } = pg;
 
-const officerPool = new Pool({
+const globalForPool = globalThis;
+
+const officerPool =
+  globalForPool.__officerPool ||
+  new Pool({
   host: process.env.OFFICER_DB_HOST,
   port: Number(process.env.OFFICER_DB_PORT || 5432),
   database: process.env.OFFICER_DB_NAME,
@@ -14,5 +18,7 @@ const officerPool = new Pool({
   connectionTimeoutMillis: 5000,
   statement_timeout: 5000,
 });
+
+globalForPool.__officerPool = officerPool;
 
 export default officerPool;

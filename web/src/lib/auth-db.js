@@ -2,7 +2,11 @@ import pg from "pg";
 
 const { Pool } = pg;
 
-const authPool = new Pool({
+const globalForPool = globalThis;
+
+const authPool =
+  globalForPool.__authPool ||
+  new Pool({
   host: process.env.AUTH_DB_HOST,
   port: Number(process.env.AUTH_DB_PORT || 5432),
   database: process.env.AUTH_DB_NAME,
@@ -14,5 +18,7 @@ const authPool = new Pool({
   connectionTimeoutMillis: 5000,
   statement_timeout: 5000,
 });
+
+globalForPool.__authPool = authPool;
 
 export default authPool;

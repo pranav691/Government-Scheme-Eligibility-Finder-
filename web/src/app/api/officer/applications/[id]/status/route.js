@@ -2,7 +2,7 @@ import officerPool from "@/lib/officer-db";
 import { getSession } from "@/lib/session";
 
 export async function POST(request, { params }) {
-  const client = await officerPool.connect();
+  let client = null;
 
   try {
     const session = await getSession();
@@ -31,7 +31,16 @@ export async function POST(request, { params }) {
       );
     }
 
-    const body = await request.json();
+    let body;
+
+    try {
+      body = await request.json();
+    } catch {
+      return Response.json(
+        { success: false, error: "Invalid request body." },
+        { status: 400 }
+      );
+    }
 
     const newStatus =
       typeof body.status === "string"
@@ -51,6 +60,7 @@ export async function POST(request, { params }) {
       );
     }
 
+    client = await officerPool.connect();
     await client.query("BEGIN");
 
     const currentResult = await client.query(
@@ -134,7 +144,13 @@ export async function POST(request, { params }) {
       application: updated.rows[0],
     });
   } catch (error) {
-    await client.query("ROLLBACK");
+    if (client) {
+      try {
+        await client.query("ROLLBACK");
+      } catch {
+        // connection already closed
+      }
+    }
 
     console.error("Officer status update error:", error);
 
@@ -146,6 +162,6 @@ export async function POST(request, { params }) {
       { status: 500 }
     );
   } finally {
-    client.release();
+    if (client) client.release();
   }
 }

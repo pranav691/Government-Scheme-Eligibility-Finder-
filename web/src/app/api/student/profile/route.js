@@ -150,7 +150,11 @@ export async function PUT(request) {
 
       const number = Number(value);
 
-      return Number.isFinite(number) ? number : null;
+      if (!Number.isFinite(number)) {
+        throw new Error("INVALID_NUMBER");
+      }
+
+      return number;
     }
 
     function nullableBoolean(value) {
@@ -396,6 +400,25 @@ export async function PUT(request) {
       profile: result.rows[0],
     });
   } catch (error) {
+    if (error.message === "INVALID_NUMBER") {
+      return Response.json(
+        { success: false, error: "Numeric fields must contain valid numbers." },
+        { status: 400 }
+      );
+    }
+
+    // 23514 check violation, 22003 out of range, 22007 bad date, 22P02 bad text
+    if (["23514", "22003", "22007", "22008", "22P02"].includes(error.code)) {
+      return Response.json(
+        {
+          success: false,
+          error:
+            "Some values are out of range or invalid (for example a percentage above 100, or an invalid date). Please check the form.",
+        },
+        { status: 400 }
+      );
+    }
+
     console.error("Student profile PUT error:", error);
 
     return Response.json(

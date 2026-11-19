@@ -1,6 +1,7 @@
 import pool from "@/lib/db";
 import { withStudent } from "@/lib/student-db";
 import { getSession } from "@/lib/session";
+import { clientKey, rateLimit, tooManyRequests } from "@/lib/rate-limit";
 
 // Local Python service (database/vector/embedding_service.py) that turns
 // the query text into a 384-dimensional vector with all-MiniLM-L6-v2.
@@ -30,6 +31,10 @@ async function embedQuery(query) {
 }
 
 export async function GET(request) {
+  // The embedding model is CPU heavy: 30 searches per minute per client.
+  const limit = rateLimit(`search:${clientKey(request)}`, 30, 60_000);
+  if (limit.limited) return tooManyRequests(limit.retryAfter);
+
   const query = (new URL(request.url).searchParams.get("q") || "").trim();
 
   if (!query) {

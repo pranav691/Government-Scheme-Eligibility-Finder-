@@ -272,3 +272,23 @@ CROSS JOIN (
 ) ref
 ORDER BY se.embedding <=> ref.embedding
 LIMIT 5;
+
+
+-- ============================================================
+-- 5e. DATABASE-ENFORCED WORKFLOW (22_security_hardening.sql)
+--     A student cannot approve their own application, and an
+--     officer cannot skip 'under_review'. Both are rolled back.
+-- ============================================================
+BEGIN;
+SET LOCAL ROLE scheme_student_app;
+SELECT set_config('app.current_user_id', '3', TRUE);
+UPDATE applications SET current_status = 'approved' WHERE user_id = 3;
+-- ERROR: Invalid application status change: draft -> approved
+ROLLBACK;
+
+BEGIN;
+SET LOCAL ROLE scheme_student_app;
+SELECT set_config('app.current_user_id', '3', TRUE);
+UPDATE applications SET previous_award_verified = TRUE WHERE user_id = 3;
+-- ERROR: permission denied for table applications (column privilege)
+ROLLBACK;

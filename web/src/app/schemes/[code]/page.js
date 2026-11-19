@@ -331,7 +331,7 @@ function SchemeDetails() {
                 </dt>
 
                 <dd className="font-medium capitalize">
-                  {scheme.scheme_status}
+                  {scheme.scheme_status?.replace(/_/g, " ")}
                 </dd>
               </div>
 
@@ -341,7 +341,7 @@ function SchemeDetails() {
                 </dt>
 
                 <dd className="font-medium capitalize">
-                  {scheme.verification_status}
+                  {scheme.verification_status?.replace(/_/g, " ")}
                 </dd>
               </div>
             </dl>

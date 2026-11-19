@@ -143,8 +143,9 @@ export async function POST(request, { params }) {
             eligibility_reason = $2,
             eligibility_checked_at = CURRENT_TIMESTAMP
           WHERE application_id = $3
+            AND user_id = $4
         `,
-        [fresh.eligibility_status, fresh.explanation, applicationId]
+        [fresh.eligibility_status, fresh.explanation, applicationId, userId]
       );
 
       if (fresh.eligibility_status === "ineligible") {

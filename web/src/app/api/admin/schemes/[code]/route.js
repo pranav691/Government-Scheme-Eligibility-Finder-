@@ -1,5 +1,7 @@
 import adminPool from "@/lib/admin-db";
 import { getSession } from "@/lib/session";
+import { cleanDate } from "@/lib/dates";
+import { refreshSchemeEmbedding } from "@/lib/embeddings";
 
 export async function GET(request, { params }) {
   try {
@@ -277,6 +279,13 @@ export async function PUT(request, { params }) {
 
     const body = await request.json();
 
+    if (typeof body.scheme_name !== "string" || !body.scheme_name.trim()) {
+      return Response.json(
+        { success: false, error: "Scheme name is required." },
+        { status: 400 }
+      );
+    }
+
     const governmentLevel = body.government_level;
     const schemeStatus = body.scheme_status;
     const verificationStatus = body.verification_status;
@@ -362,8 +371,8 @@ export async function PUT(request, { params }) {
           scheme_status = $14,
           verification_status = $15,
           last_verified_date = $16,
-          is_active = $17,
-          eligibility_rules_complete = $18,
+          is_active = COALESCE($17, is_active),
+          eligibility_rules_complete = COALESCE($18, eligibility_rules_complete),
           updated_at = CURRENT_TIMESTAMP
         WHERE UPPER(scheme_code) = $19
         RETURNING *
@@ -380,13 +389,15 @@ export async function PUT(request, { params }) {
         body.application_url?.trim() || null,
         body.source_url?.trim() || null,
         body.academic_year?.trim() || null,
-        body.application_start_date || null,
-        body.application_deadline || null,
+        cleanDate(body.application_start_date),
+        cleanDate(body.application_deadline),
         schemeStatus,
         verificationStatus,
-        body.last_verified_date || null,
-        Boolean(body.is_active),
-        Boolean(body.eligibility_rules_complete),
+        cleanDate(body.last_verified_date),
+        typeof body.is_active === "boolean" ? body.is_active : null,
+        typeof body.eligibility_rules_complete === "boolean"
+          ? body.eligibility_rules_complete
+          : null,
         schemeCode,
       ]
     );
@@ -401,9 +412,13 @@ export async function PUT(request, { params }) {
       );
     }
 
+    const embedded = await refreshSchemeEmbedding(result.rows[0].scheme_code);
+
     return Response.json({
       success: true,
-      message: "Scheme updated successfully.",
+      message: embedded
+        ? "Scheme updated successfully."
+        : "Scheme updated. Semantic search will refresh once the embedding service has run.",
       scheme: result.rows[0],
     });
   } catch (error) {

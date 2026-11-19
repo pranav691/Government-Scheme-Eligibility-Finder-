@@ -18,6 +18,7 @@ Run (from database/vector):
 Endpoints:
     GET /health          -> {"status": "ok", "model": ..., "dimensions": 384}
     GET /embed?q=<text>  -> {"embedding": [384 floats]}
+    POST /embed {"text"} -> {"embedding": [384 floats]}  (scheme documents)
 """
 
 import json
@@ -32,6 +33,8 @@ PORT = 8001
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 DIMENSIONS = 384
 MAX_QUERY_LENGTH = 300
+MAX_DOCUMENT_LENGTH = 6000
+MAX_DOCUMENT_BYTES = 32768
 
 print("Loading embedding model (first run may take a minute)...")
 model = SentenceTransformer(MODEL_NAME)
@@ -83,6 +86,37 @@ class EmbeddingHandler(BaseHTTPRequestHandler):
 
         if len(vector) != DIMENSIONS:
             self._send_json(500, {"error": "Unexpected embedding size."})
+            return
+
+        self._send_json(200, {"embedding": [float(x) for x in vector]})
+
+    def do_POST(self):
+        """POST /embed with JSON {"text": "..."}; used by the admin screens
+        to embed a whole scheme description (longer than a search query)."""
+        if urlparse(self.path).path != "/embed":
+            self._send_json(404, {"error": "Not found."})
+            return
+
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+            if length <= 0 or length > MAX_DOCUMENT_BYTES:
+                raise ValueError("bad length")
+            payload = json.loads(self.rfile.read(length).decode("utf-8"))
+            text = str(payload.get("text", "")).strip()
+        except (ValueError, UnicodeDecodeError, AttributeError):
+            self._send_json(400, {"error": "Send JSON like {\"text\": \"...\"}."})
+            return
+
+        if not text or len(text) > MAX_DOCUMENT_LENGTH:
+            self._send_json(400, {"error": "Text is empty or too long."})
+            return
+
+        try:
+            with model_lock:
+                vector = model.encode(text, normalize_embeddings=True)
+        except Exception as exc:  # noqa: BLE001
+            print("Embedding error:", exc)
+            self._send_json(500, {"error": "Unable to create embedding."})
             return
 
         self._send_json(200, {"embedding": [float(x) for x in vector]})

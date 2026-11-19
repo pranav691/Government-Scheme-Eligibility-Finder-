@@ -1,7 +1,13 @@
 BEGIN;
 
 -- Use a dedicated role for the two public catalogue APIs.
-CREATE ROLE scheme_catalogue_reader NOLOGIN;
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'scheme_catalogue_reader') THEN
+        CREATE ROLE scheme_catalogue_reader NOLOGIN;
+    END IF;
+END
+$$;
 
 GRANT CONNECT ON DATABASE scheme_finder TO scheme_catalogue_reader;
 GRANT USAGE ON SCHEMA public TO scheme_catalogue_reader;
