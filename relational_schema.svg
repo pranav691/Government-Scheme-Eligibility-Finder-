@@ -136,7 +136,13 @@
 <text x="2130.5" y="1531.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">created_at</text>
 <rect x="2224" y="1498" width="196" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
 <text x="2322.0" y="1531.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">updated_at</text>
-<text x="2445" y="1531.0" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#66717b">continued 5/5</text>
+<rect x="2420" y="1498" width="322" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="2581.0" y="1531.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">class_12_percentile</text>
+<rect x="2742" y="1498" width="336" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="2910.0" y="1531.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">admission_entry_type</text>
+<rect x="3078" y="1498" width="350" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="3253.0" y="1531.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">aicte_approved_degree</text>
+<text x="3452" y="1531.0" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#66717b">continued 5/5</text>
 <text x="800" y="1649" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#435464">UNIQUE: user_id</text>
 <text x="800" y="1684" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="39" font-weight="700" fill="#242a30">SCHEMES</text>
 <rect x="800" y="1804" width="191" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
@@ -183,7 +189,9 @@
 <text x="1623.5" y="2105.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">created_at</text>
 <rect x="1717" y="2072" width="196" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
 <text x="1815.0" y="2105.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">updated_at</text>
-<text x="1938" y="2105.0" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#66717b">continued 3/3</text>
+<rect x="1913" y="2072" width="421" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="2123.5" y="2105.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">eligibility_rules_complete</text>
+<text x="2358" y="2105.0" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#66717b">continued 3/3</text>
 <text x="800" y="2223" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#435464">UNIQUE: scheme_code</text>
 <text x="800" y="2258" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="39" font-weight="700" fill="#242a30">ELIGIBILITY_RULE_GROUPS</text>
 <rect x="800" y="2378" width="163" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
@@ -200,6 +208,21 @@
 <rect x="1741" y="2378" width="187" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
 <text x="1834.5" y="2411.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">created_at</text>
 <text x="800" y="2529" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#435464">UNIQUE: (scheme_id, group_order)</text>
+<text x="2700" y="2564" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="39" font-weight="700" fill="#242a30">ELIGIBILITY_ATTRIBUTES</text>
+<rect x="2700" y="2684" width="251" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="2825.5" y="2717.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">attribute_name</text>
+<polyline points="2722.0,2735.0 2929.0,2735.0" fill="none" stroke="#242a30" stroke-width="2" stroke-linejoin="round"/>
+<rect x="2951" y="2684" width="194" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="3048.0" y="2717.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">value_type</text>
+<rect x="3145" y="2684" width="160" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="3225.0" y="2717.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">source</text>
+<rect x="3305" y="2684" width="208" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="3409.0" y="2717.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">description</text>
+<text x="2700" y="2790" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#435464">UNIQUE: (attribute_name, value_type)</text>
+<text x="2700" y="2824" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#435464">Target of the composite FK from ELIGIBILITY_RULES</text>
+<polyline points="1246.0,2750.0 1246.0,2776.0 2640.0,2776.0 2640.0,2717.0 2678.0,2717.0" fill="none" stroke="#34404a" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2700,2717 2678,2708 2678,2726" fill="#34404a"/>
+<text x="1290" y="2797" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#435464">composite FK (attribute_name, value_type)</text>
 <text x="800" y="2564" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="39" font-weight="700" fill="#242a30">ELIGIBILITY_RULES</text>
 <rect x="800" y="2684" width="160" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
 <text x="880.0" y="2717.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">rule_id</text>
@@ -277,7 +300,13 @@
 <text x="893.5" y="4209.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">created_at</text>
 <rect x="987" y="4176" width="196" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
 <text x="1085.0" y="4209.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">updated_at</text>
-<text x="1208" y="4209.0" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#66717b">continued 2/2</text>
+<rect x="1183" y="4176" width="279" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="1322.5" y="4209.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">application_kind</text>
+<rect x="1462" y="4176" width="379" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="1651.5" y="4209.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">previous_award_verified</text>
+<rect x="1841" y="4176" width="350" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+<text x="2016.0" y="4209.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#242a30">attendance_percentage</text>
+<text x="2215" y="4209.0" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#66717b">continued 2/2</text>
 <text x="800" y="4327" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#435464">UNIQUE: (user_id, scheme_id)</text>
 <text x="800" y="4362" text-anchor="start" dominant-baseline="central" font-family="Arial, sans-serif" font-size="39" font-weight="700" fill="#242a30">APPLICATION_STATUS_LOG</text>
 <rect x="800" y="4482" width="160" height="66" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
@@ -319,4 +348,4 @@
 <text x="2000.0" y="5089" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#242a30">Underlined attributes = primary key. Arrows point from a foreign key to its referenced primary key.</text>
 <text x="2000.0" y="5137" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#242a30">Wrapped rows belong to the same relation. Crossing reference lines do not represent a junction.</text>
 <text x="2000.0" y="5185" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#242a30">Mapping: strong entities; FK-based 1:1 and 1:N relationships; SCHEME_CATEGORIES resolves M:N; category hierarchy uses a self-FK.</text>
-<text x="2000.0" y="5233" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#242a30">Derived age is not stored. No additional weak-entity, multivalued-attribute or n-ary mapping is needed for this schema.</text></svg>
+<text x="2000.0" y="5233" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#242a30">Derived age is not stored. ELIGIBILITY_ATTRIBUTES is the rule-attribute catalogue referenced by ELIGIBILITY_RULES. No additional weak-entity, multivalued-attribute or n-ary mapping is needed for this schema.</text></svg>

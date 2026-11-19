@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="6400" height="5150" viewBox="0 0 6400 5150"><rect width="100%" height="100%" fill="white"/><text x="3200.0" y="77" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#172432">Government / State Scheme Eligibility Finder</text>
-<text x="3200.0" y="153" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#172432">Chen Notation ER Diagram</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="7700" height="5210" viewBox="0 0 7700 5210"><rect width="100%" height="100%" fill="white"/><text x="3850.0" y="77" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#172432">Government / State Scheme Eligibility Finder</text>
+<text x="3850.0" y="153" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#172432">Chen Notation ER Diagram</text>
+<polyline points="990.00,1050.00 1120.00,1800.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1880.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="990.00,1050.00 1120.00,1960.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2580.00,3620.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2560.00,3780.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="2510.00,2600.00 2570.00,3940.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="3710.00,2600.00 3590.00,3920.00" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="5765.00,4204.00 6065.00,4204.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="5765.00,4196.00 6065.00,4196.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="6405.00,4200.00 6770.00,4200.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="7070.00,4150.00 6885.03,3894.57" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="7070.00,4150.00 7202.03,3894.75" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="7070.00,4250.00 6888.85,4465.65" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="7070.00,4250.00 7199.18,4465.30" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
 <polyline points="800.00,3950.00 800.00,3730.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
 <polyline points="804.00,2650.00 804.00,3570.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
 <polyline points="796.00,2650.00 796.00,3570.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
@@ -482,6 +496,36 @@
 <text x="6060" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">failure_message</text>
 <ellipse cx="800" cy="350" rx="180" ry="35" fill="white" stroke="#172432" stroke-width="3" stroke-dasharray="17 11"/>
 <text x="800" y="350" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">age</text>
+<ellipse cx="1350" cy="1800" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1800" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">class_12_percentile</text>
+<ellipse cx="1350" cy="1880" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1880" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">admission_entry_type</text>
+<ellipse cx="1350" cy="1960" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="1350" y="1960" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">aicte_approved_degree</text>
+<ellipse cx="2800" cy="3620" rx="220" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="3620" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">application_kind</text>
+<ellipse cx="2800" cy="3780" rx="240" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="3780" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">previous_award_verified</text>
+<ellipse cx="2800" cy="3940" rx="230" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="2800" y="3940" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">attendance_percentage</text>
+<ellipse cx="3350" cy="3920" rx="240" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="3350" y="3920" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">eligibility_rules_complete</text>
+<rect x="6770.0" y="4150.0" width="600" height="100" fill="#dceefa" stroke="#172432" stroke-width="3"/>
+<text x="7070" y="4200" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">ELIGIBILITY_ATTRIBUTES</text>
+<polyline points="6065.00,4200.00 6235.00,4120.00 6405.00,4200.00 6235.00,4280.00 6065.00,4200.00" fill="none" stroke="#172432" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="6065,4200 6235,4120 6405,4200 6235,4280" fill="#fff0bf" stroke="#172432" stroke-width="3"/>
+<text x="6235" y="4200" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#172432">DEFINES</text>
+<text x="5890" y="4168" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
+<text x="6680" y="4168" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
+<ellipse cx="6860" cy="3860" rx="160" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6860" y="3860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172432">attribute_name</text>
+<polyline points="6774.60,3872.72 6945.40,3872.72" fill="none" stroke="#172432" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="7220" cy="3860" rx="150" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="7220" y="3860" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">value_type</text>
+<ellipse cx="6860" cy="4500" rx="150" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="6860" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">source</text>
+<ellipse cx="7220" cy="4500" rx="160" ry="35" fill="white" stroke="#172432" stroke-width="2"/>
+<text x="7220" y="4500" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172432">description</text>
 <text x="878.0" y="3884.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
 <text x="878.0" y="2926.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(1,1)</text>
 <text x="878.0" y="2469.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,1)</text>
@@ -508,12 +552,13 @@
 <text x="4350" y="1135" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">child (0,1)</text>
 <text x="1160" y="2435" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,N)</text>
 <text x="1850" y="1010" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172432">(0,1)</text>
-<polyline points="180.00,4690.00 6220.00,4690.00" fill="none" stroke="#b7c5ce" stroke-width="2" stroke-linejoin="round"/>
-<text x="3200" y="4735" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">NOTATION AND SCHEMA CONSTRAINTS</text>
-<text x="3200" y="4790" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172432">Rectangle = entity | Diamond = relationship | Oval = attribute | Underline = primary key | (FK) = foreign key | Dashed oval = derived</text>
-<text x="3200" y="4835" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172432">(min,max) is the number of relationship instances per entity instance. Double line = total participation; single line = partial participation.</text>
-<text x="3200" y="4885" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">SCHEME_CATEGORIES: composite PK (scheme_id, category_id). APPLICATIONS: UNIQUE (user_id, scheme_id).</text>
-<text x="3200" y="4930" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">USER_PROFILES.user_id and SCHEME_EMBEDDINGS.scheme_id are UNIQUE. changed_by and parent_category_id are nullable.</text>
-<text x="3200" y="4975" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">Applications may have zero log records. Category CHECK prevents self-parenting; the supplied DDL does not prevent multi-category cycles.</text>
-<text x="3200" y="5020" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">Eligibility evaluation: AND within a rule group; OR between groups. age is derived from date_of_birth at the eligibility reference date.</text>
-<text x="3200" y="5075" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#415569">Verified against the supplied 12-table PostgreSQL DDL. This diagram documents the schema; no database commands were executed.</text></svg>
+<polyline points="180.00,4690.00 7520.00,4690.00" fill="none" stroke="#b7c5ce" stroke-width="2" stroke-linejoin="round"/>
+<text x="3850" y="4735" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172432">NOTATION AND SCHEMA CONSTRAINTS</text>
+<text x="3850" y="4790" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172432">Rectangle = entity | Diamond = relationship | Oval = attribute | Underline = primary key | (FK) = foreign key | Dashed oval = derived</text>
+<text x="3850" y="4835" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172432">(min,max) is the number of relationship instances per entity instance. Double line = total participation; single line = partial participation.</text>
+<text x="3850" y="4885" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">SCHEME_CATEGORIES: composite PK (scheme_id, category_id). APPLICATIONS: UNIQUE (user_id, scheme_id).</text>
+<text x="3850" y="4930" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">USER_PROFILES.user_id and SCHEME_EMBEDDINGS.scheme_id are UNIQUE. changed_by and parent_category_id are nullable.</text>
+<text x="3850" y="4975" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">Applications may have zero log records. Category CHECK prevents self-parenting; the supplied DDL does not prevent multi-category cycles.</text>
+<text x="3850" y="5020" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">Eligibility evaluation: AND within a rule group; OR between groups. age is derived from date_of_birth at the eligibility reference date.</text>
+<text x="3850" y="5075" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172432">ELIGIBILITY_ATTRIBUTES: PK attribute_name, UNIQUE (attribute_name, value_type); ELIGIBILITY_RULES references it by composite FK (attribute_name, value_type).</text>
+<text x="3850" y="5130" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#415569">Verified against the 13-table PostgreSQL schema (scripts 02-22). This diagram documents the schema; it does not change the database.</text></svg>
