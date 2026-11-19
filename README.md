@@ -163,7 +163,9 @@ type*.
   officers may only review / approve / reject, and a student submission is
   re-checked by `evaluate_eligibility()` inside the trigger. Students also
   have column-level `UPDATE` rights only, so they cannot edit their own
-  status or the officer-verified renewal evidence.
+  status or the officer-verified renewal evidence. A student may delete only their own **draft**
+  applications ("Delete Draft" button): `GRANT DELETE` plus a RESTRICTIVE
+  Row-Level Security policy `USING (current_status = 'draft')`.
 - **Audit trail:** the same trigger records every application status change
   and the user who made it.
 - **Web hardening:** `src/proxy.js` rejects cross-site state-changing
@@ -257,7 +259,7 @@ Connect as `scheme_user` to `scheme_finder` and run, **in this order**:
 | 10 | `18_rule_attribute_catalog.sql` | |
 | 11 | `19_row_level_security.sql` | |
 | 12 | `20_demo_passwords.sql` | Sets the demo password |
-| 13 | `22_security_hardening.sql` | Column privileges + status workflow trigger |
+| 13 | `22_security_hardening.sql` | Column privileges, status workflow trigger, draft-only delete policy |
 
 `06` and `07` are demonstration scripts and can be run at any time.
 

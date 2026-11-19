@@ -7,6 +7,7 @@ export default function ApplicationsList() {
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [submittingId, setSubmittingId] = useState(null);
+  const [deletingId, setDeletingId] = useState(null);
   const [error, setError] = useState("");
 
   async function loadApplications() {
@@ -62,6 +63,38 @@ export default function ApplicationsList() {
       setError("Unable to submit application.");
     } finally {
       setSubmittingId(null);
+    }
+  }
+
+  async function deleteDraft(applicationId, schemeCode) {
+    const confirmed = window.confirm(
+      `Delete your draft application for ${schemeCode}? This cannot be undone.`
+    );
+
+    if (!confirmed) return;
+
+    setDeletingId(applicationId);
+    setError("");
+
+    try {
+      const response = await fetch(
+        `/api/student/applications/${applicationId}`,
+        { method: "DELETE" }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || "Unable to delete draft.");
+        return;
+      }
+
+      await loadApplications();
+    } catch (error) {
+      console.error(error);
+      setError("Unable to delete draft.");
+    } finally {
+      setDeletingId(null);
     }
   }
 
@@ -230,6 +263,25 @@ export default function ApplicationsList() {
                       {submittingId === application.application_id
                         ? "Submitting..."
                         : "Submit Application"}
+                    </button>
+                  )}
+
+                  {application.current_status === "draft" && (
+                    <button
+                      onClick={() =>
+                        deleteDraft(
+                          application.application_id,
+                          application.scheme_code
+                        )
+                      }
+                      disabled={
+                        deletingId === application.application_id
+                      }
+                      className="rounded-xl border border-red-500/40 px-4 py-2 text-sm font-semibold text-red-300 hover:bg-red-500/10 disabled:opacity-60"
+                    >
+                      {deletingId === application.application_id
+                        ? "Deleting..."
+                        : "Delete Draft"}
                     </button>
                   )}
                 </div>

@@ -171,6 +171,24 @@ EXECUTE FUNCTION force_student_draft();
 -- ------------------------------------------------------------
 GRANT INSERT, UPDATE ON TABLE scheme_embeddings TO scheme_admin_app;
 
+
+-- ------------------------------------------------------------
+-- 5. Students may delete their OWN DRAFT applications only
+--    (the "Delete draft" button on My Applications).
+--    - GRANT DELETE allows the statement at all.
+--    - The existing FOR ALL policy limits it to the student's own rows.
+--    - The RESTRICTIVE policy below is ANDed with it, so a submitted,
+--      approved or rejected application can never be deleted.
+-- ------------------------------------------------------------
+GRANT DELETE ON TABLE applications TO scheme_student_app;
+
+DROP POLICY IF EXISTS applications_student_delete_draft_only ON applications;
+
+CREATE POLICY applications_student_delete_draft_only ON applications
+    AS RESTRICTIVE
+    FOR DELETE TO scheme_student_app
+    USING (current_status = 'draft');
+
 COMMIT;
 
 -- ============================================================
