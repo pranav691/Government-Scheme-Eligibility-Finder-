@@ -241,6 +241,13 @@ listening only on `127.0.0.1:5432`.
 
 ### 2. Create the schema and data
 
+First make pgAdmin / `psql` show timestamps in Indian time (the data is always
+stored correctly as an exact moment; this only changes how it is displayed):
+
+```bash
+docker exec scheme-postgres psql -U scheme_user -d postgres -c "ALTER DATABASE scheme_finder SET timezone TO 'Asia/Kolkata'"
+```
+
 Connect as `scheme_user` to `scheme_finder` and run, **in this order**:
 
 | Order | Script | Notes |
