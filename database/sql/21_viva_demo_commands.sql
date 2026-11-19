@@ -275,7 +275,7 @@ LIMIT 5;
 
 
 -- ============================================================
--- 5e. DATABASE-ENFORCED WORKFLOW (22_security_hardening.sql)
+-- 5e. DATABASE-ENFORCED WORKFLOW (trigger in 08, grants in 13)
 --     A student cannot approve their own application, and an
 --     officer cannot skip 'under_review'. Both are rolled back.
 -- ============================================================

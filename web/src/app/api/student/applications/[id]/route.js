@@ -7,7 +7,7 @@ import { getSession } from "@/lib/session";
 //   1. this route only runs for a signed-in student and only targets the
 //      session's own user id,
 //   2. the SQL below also requires current_status = 'draft',
-//   3. PostgreSQL Row-Level Security (22_security_hardening.sql) refuses to
+//   3. PostgreSQL Row-Level Security (19_row_level_security.sql) refuses to
 //      delete another student's row or any non-draft application, even if
 //      this route had a bug.
 export async function DELETE(request, { params }) {

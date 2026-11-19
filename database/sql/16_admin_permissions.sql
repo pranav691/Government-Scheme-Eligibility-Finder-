@@ -33,9 +33,14 @@ TO scheme_admin_app;
 GRANT USAGE ON SCHEMA public
 TO scheme_admin_app;
 
--- Admin can view users and their roles.
+-- Admin can view users and their roles, but never password_hash.
+-- (Revoke first so this script is safe to re-run on an older database.)
+REVOKE SELECT ON TABLE users FROM scheme_admin_app;
+
+GRANT SELECT (user_id, role_id, full_name, email, is_active, created_at)
+ON users TO scheme_admin_app;
+
 GRANT SELECT ON TABLE
-    users,
     roles,
     user_profiles
 TO scheme_admin_app;
@@ -56,8 +61,9 @@ GRANT SELECT ON TABLE
     application_status_log
 TO scheme_admin_app;
 
--- Admin can inspect vector records.
-GRANT SELECT ON TABLE
+-- Admin can inspect vector records and refresh them when a scheme
+-- is created or edited in the admin screens.
+GRANT SELECT, INSERT, UPDATE ON TABLE
     scheme_embeddings
 TO scheme_admin_app;
 

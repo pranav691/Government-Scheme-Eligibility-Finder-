@@ -1,6 +1,6 @@
 -- ============================================================
 -- 19_row_level_security.sql
--- Row-Level Security (RLS) + tighter column privileges.
+-- Row-Level Security (RLS).
 --
 -- BEFORE: the student DB role could read EVERY user's row
 -- (including password_hash) and read/update EVERY student's
@@ -38,15 +38,11 @@ $$;
 
 -- ============================================================
 -- 1. Column-level privileges on USERS
---    Nobody except the auth role needs password_hash.
+--    Nobody except the auth role needs password_hash. These are
+--    granted in 12_student_eligibility_permissions.sql
+--    (student: user_id, email) and 16_admin_permissions.sql
+--    (admin: everything except password_hash).
 -- ============================================================
-
-REVOKE SELECT ON TABLE users FROM scheme_student_app;
-GRANT SELECT (user_id, email) ON users TO scheme_student_app;
-
-REVOKE SELECT ON TABLE users FROM scheme_admin_app;
-GRANT SELECT (user_id, role_id, full_name, email, is_active, created_at)
-ON users TO scheme_admin_app;
 
 
 -- ============================================================
@@ -130,6 +126,17 @@ CREATE POLICY applications_officer_update ON applications
 CREATE POLICY applications_admin_read ON applications
     FOR SELECT TO scheme_admin_app
     USING (TRUE);
+
+-- A student may delete only their OWN applications (policy above)
+-- AND only while they are still drafts. A RESTRICTIVE policy is ANDed
+-- with the permissive ones, so submitted / approved / rejected
+-- applications can never be deleted by the student role.
+DROP POLICY IF EXISTS applications_student_delete_draft_only ON applications;
+
+CREATE POLICY applications_student_delete_draft_only ON applications
+    AS RESTRICTIVE
+    FOR DELETE TO scheme_student_app
+    USING (current_status = 'draft');
 
 
 -- ============================================================

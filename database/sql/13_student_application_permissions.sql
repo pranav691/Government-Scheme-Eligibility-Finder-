@@ -16,9 +16,34 @@
 
 BEGIN;
 
--- Create a draft (procedure), read own applications, update status
--- and stored eligibility result when submitting.
-GRANT SELECT, INSERT, UPDATE
+-- Column-level privileges: the student role may NOT edit user_id,
+-- scheme_id, application_kind, previous_award_verified or
+-- attendance_percentage (officer-verified evidence), nor create an
+-- application that is already approved.
+-- (Revoke first so this script is safe to re-run on an older database.)
+REVOKE INSERT, UPDATE ON TABLE applications FROM scheme_student_app;
+
+GRANT SELECT
+ON TABLE applications
+TO scheme_student_app;
+
+-- Create a draft (the submit_scheme_application procedure).
+GRANT INSERT (
+    user_id, scheme_id, current_status, application_kind,
+    created_at, updated_at
+) ON applications TO scheme_student_app;
+
+-- Submit a draft and store the eligibility result.
+GRANT UPDATE (
+    current_status, applied_at,
+    eligibility_result, eligibility_reason, eligibility_checked_at,
+    updated_at
+) ON applications TO scheme_student_app;
+
+-- Delete a draft ("Delete Draft" button). Row-Level Security
+-- (19_row_level_security.sql) limits this to the student's OWN
+-- applications that are still drafts.
+GRANT DELETE
 ON TABLE applications
 TO scheme_student_app;
 

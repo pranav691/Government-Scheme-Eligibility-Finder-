@@ -134,7 +134,7 @@ type*.
 | Database creation, constraints, sample data | `02_tables_constraints.sql`, `03_seed_data.sql`, `05_patch_rule_corrections.sql` |
 | CRUD | `06_crud_operations.sql`; admin pages in the web app |
 | JOIN, nested, correlated, recursive queries | `07_required_queries.sql` |
-| CTE, function, procedure, trigger | `08_advanced_sql.sql`, `15_status_actor_tracking.sql` |
+| CTE, function, procedure, trigger | `08_advanced_sql.sql` |
 | Vector database (create + read/update/delete) | `scheme_embeddings`, `database/vector/*.py`, Smart Search |
 | Authentication | bcrypt hashes, signed `httpOnly` session cookie |
 | Authorization | 5 database roles with table and column grants (`09`–`17`), Row-Level Security (`19`), role checks on every API route |
@@ -157,8 +157,7 @@ type*.
 - **Defence in depth:** web pages check the role (redirect), API routes
   check the role (`401` / `403`), and the database enforces grants, RLS and
   constraints even if the web layer were bypassed.
-- **Status workflow in the database:** `22_security_hardening.sql` makes the
-  trigger enforce the allowed transitions (draft → submitted → under_review →
+- **Status workflow in the database:** the trigger in `08_advanced_sql.sql` enforces the allowed transitions (draft → submitted → under_review →
   approved / rejected, plus withdrawn). Students may only submit or withdraw,
   officers may only review / approve / reject, and a student submission is
   re-checked by `evaluate_eligibility()` inside the trigger. Students also
@@ -204,8 +203,7 @@ type*.
 │   │   ├── 18_rule_attribute_catalog.sql
 │   │   ├── 19_row_level_security.sql
 │   │   ├── 20_demo_passwords.sql
-│   │   ├── 21_viva_demo_commands.sql   one ordered script for the viva
-│   │   └── 22_security_hardening.sql   column grants + workflow trigger
+│   │   └── 21_viva_demo_commands.sql   one ordered script for the viva
 │   └── vector/
 │       ├── requirements.txt
 │       ├── generate_embeddings.py      create / refresh scheme vectors
@@ -252,16 +250,19 @@ Connect as `scheme_user` to `scheme_finder` and run, **in this order**:
 | 3 | `04_patch_scheme_source_urls.sql` | |
 | 4 | `05_patch_rule_corrections.sql` | Optional check: `05_verify_rule_corrections.sql` |
 | 5 | `08_advanced_sql.sql` | Creates the function, procedure and trigger |
-| 6 | `09` → `16` | Database roles and grants |
-| 7 | `15_status_actor_tracking.sql` | Run again after `08` if `08` is ever re-run |
-| 8 | Generate embeddings (step 3 below) | |
-| 9 | `17_search_permissions.sql` | |
-| 10 | `18_rule_attribute_catalog.sql` | |
-| 11 | `19_row_level_security.sql` | |
-| 12 | `20_demo_passwords.sql` | Sets the demo password |
-| 13 | `22_security_hardening.sql` | Column privileges, status workflow trigger, draft-only delete policy |
+| 6 | `09` → `14`, `16` | Database roles and grants |
+| 7 | Generate embeddings (step 3 below) | |
+| 8 | `17_search_permissions.sql` | |
+| 9 | `18_rule_attribute_catalog.sql` | |
+| 10 | `19_row_level_security.sql` | |
+| 11 | `20_demo_passwords.sql` | Sets the demo password |
 
 `06` and `07` are demonstration scripts and can be run at any time.
+
+**Updating a database created from an older version of these scripts:** pull the
+latest files, then re-run `08_advanced_sql.sql`, `13_student_application_permissions.sql`,
+`16_admin_permissions.sql` and `19_row_level_security.sql` (in that order). All four
+are safe to re-run, and afterwards the database is identical to a fresh build.
 
 **Give each login role a password** (use your own values, and put the same
 values in `web/.env.local`):

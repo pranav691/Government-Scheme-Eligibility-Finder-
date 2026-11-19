@@ -908,7 +908,24 @@ ROLLBACK;
 -- under_review -> approved
 --
 -- PostgreSQL automatically inserts a row into
--- application_status_log.
+-- application_status_log, recording WHO made the change
+-- (taken from the transaction setting app.current_user_id,
+-- which the web app sets for every request).
+--
+-- The same trigger also enforces the application workflow:
+--
+--   draft        -> submitted | withdrawn
+--   submitted    -> under_review | withdrawn
+--   under_review -> approved | rejected | withdrawn
+--
+--   * students may only submit or withdraw
+--   * officers may only review, approve or reject
+--   * when a student submits, evaluate_eligibility() is run
+--     again inside the trigger and 'ineligible' is refused
+--
+-- A second small trigger (force_student_draft) makes sure an
+-- application inserted by the student role always starts as
+-- a draft.
 --
 -- ============================================================
 
@@ -917,40 +934,79 @@ CREATE OR REPLACE FUNCTION log_application_status_change()
 RETURNS TRIGGER
 LANGUAGE plpgsql
 AS $$
+DECLARE
+    v_actor_text TEXT;
+    v_actor_id   BIGINT;
+    v_fresh      RECORD;
 BEGIN
-
-    -- Keep updated_at current whenever an application changes.
     NEW.updated_at := CURRENT_TIMESTAMP;
-
-
-    -- Only create history when STATUS actually changes.
 
     IF NEW.current_status IS DISTINCT FROM OLD.current_status THEN
 
-        INSERT INTO application_status_log
-        (
-            application_id,
-            old_status,
-            new_status,
-            changed_at,
-            changed_by,
-            remarks
+        -- (a) Allowed transitions for everybody.
+        IF NOT (
+            (OLD.current_status = 'draft'
+                AND NEW.current_status IN ('submitted', 'withdrawn'))
+         OR (OLD.current_status = 'submitted'
+                AND NEW.current_status IN ('under_review', 'withdrawn'))
+         OR (OLD.current_status = 'under_review'
+                AND NEW.current_status IN ('approved', 'rejected', 'withdrawn'))
+        ) THEN
+            RAISE EXCEPTION 'Invalid application status change: % -> %',
+                OLD.current_status, NEW.current_status
+                USING ERRCODE = '23514';
+        END IF;
+
+        -- (b) Who may make which change.
+        IF current_user = 'scheme_student_app'
+           AND NEW.current_status NOT IN ('submitted', 'withdrawn') THEN
+            RAISE EXCEPTION 'Students may only submit or withdraw an application.'
+                USING ERRCODE = '42501';
+        END IF;
+
+        IF current_user = 'scheme_officer_app'
+           AND NEW.current_status NOT IN ('under_review', 'approved', 'rejected') THEN
+            RAISE EXCEPTION 'Officers may only review, approve or reject an application.'
+                USING ERRCODE = '42501';
+        END IF;
+
+        -- (c) A student submission is re-checked by the rule engine.
+        IF current_user = 'scheme_student_app'
+           AND NEW.current_status = 'submitted' THEN
+
+            SELECT eligibility_status, explanation
+            INTO v_fresh
+            FROM evaluate_eligibility(NEW.user_id, NEW.scheme_id);
+
+            IF v_fresh.eligibility_status = 'ineligible' THEN
+                RAISE EXCEPTION 'Not eligible: %', v_fresh.explanation
+                    USING ERRCODE = '23514';
+            END IF;
+
+            NEW.eligibility_result     := v_fresh.eligibility_status;
+            NEW.eligibility_reason     := v_fresh.explanation;
+            NEW.eligibility_checked_at := CURRENT_TIMESTAMP;
+        END IF;
+
+        -- (d) History row, with the authenticated actor.
+        v_actor_text := current_setting('app.current_user_id', TRUE);
+
+        IF v_actor_text IS NOT NULL AND v_actor_text <> '' THEN
+            v_actor_id := v_actor_text::BIGINT;
+        END IF;
+
+        INSERT INTO application_status_log (
+            application_id, old_status, new_status,
+            changed_at, changed_by, remarks
         )
-        VALUES
-        (
-            OLD.application_id,
-            OLD.current_status,
-            NEW.current_status,
-            CURRENT_TIMESTAMP,
-            NULL,
+        VALUES (
+            NEW.application_id, OLD.current_status, NEW.current_status,
+            CURRENT_TIMESTAMP, v_actor_id,
             'Automatically recorded by application status trigger.'
         );
-
     END IF;
 
-
     RETURN NEW;
-
 END;
 $$;
 
@@ -974,6 +1030,30 @@ ON applications
 FOR EACH ROW
 
 EXECUTE FUNCTION log_application_status_change();
+
+
+
+-- Students can only create drafts.
+
+CREATE OR REPLACE FUNCTION force_student_draft()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF current_user = 'scheme_student_app' THEN
+        NEW.current_status := 'draft';
+        NEW.applied_at := NULL;
+    END IF;
+    RETURN NEW;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS trg_force_student_draft ON applications;
+
+CREATE TRIGGER trg_force_student_draft
+BEFORE INSERT ON applications
+FOR EACH ROW
+EXECUTE FUNCTION force_student_draft();
 
 
 
