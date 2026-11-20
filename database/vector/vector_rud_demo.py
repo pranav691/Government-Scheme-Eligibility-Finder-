@@ -1,3 +1,4 @@
+import sys
 from getpass import getpass
 
 import psycopg
@@ -11,6 +12,13 @@ DB_NAME = "scheme_finder"
 DB_USER = "scheme_user"
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+
+# Default: every change is rolled back at the end (safe demo).
+# With --commit the UPDATE and DELETE are made PERMANENT on the real
+# database, so they show up in Admin > Vector Embeddings and in Smart
+# Search. Use the Generate button there (or generate_embeddings.py) to
+# bring the deleted K01 vector back afterwards.
+COMMIT = "--commit" in sys.argv
 
 password = getpass("Enter PostgreSQL password: ")
 
@@ -159,16 +167,22 @@ print("Temporary total embeddings:", count_after_delete)
 
 
 # ============================================================
-# ROLLBACK
-# ============================================================
-# Restore K01 and its original embedding.
+# ROLLBACK (default) or COMMIT (--commit)
 # ============================================================
 
-conn.rollback()
+if COMMIT:
+    conn.commit()
 
-print("\n========== ROLLBACK ==========")
-print("UPDATE and DELETE rolled back.")
-print("Original database restored.")
+    print("\n========== COMMIT ==========")
+    print("UPDATE and DELETE are now PERMANENT in the database.")
+    print("K01 has no embedding until you regenerate it")
+    print("(Admin > Vector Embeddings > Generate).")
+else:
+    conn.rollback()
+
+    print("\n========== ROLLBACK ==========")
+    print("UPDATE and DELETE rolled back.")
+    print("Original database restored.")
 
 
 # Final verification

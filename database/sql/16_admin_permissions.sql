@@ -66,9 +66,10 @@ GRANT SELECT ON TABLE
     application_status_log
 TO scheme_admin_app;
 
--- Admin can inspect vector records and refresh them when a scheme
--- is created or edited in the admin screens.
-GRANT SELECT, INSERT, UPDATE ON TABLE
+-- Admin can read, update, delete and regenerate vector records
+-- (Admin > Embeddings) and they are refreshed when a scheme is
+-- created or edited in the admin screens.
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE
     scheme_embeddings
 TO scheme_admin_app;
 

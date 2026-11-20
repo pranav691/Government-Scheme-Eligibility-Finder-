@@ -135,7 +135,7 @@ type*.
 | CRUD | `06_crud_operations.sql`; admin pages in the web app |
 | JOIN, nested, correlated, recursive queries | `07_required_queries.sql` |
 | CTE, function, procedure, trigger | `08_advanced_sql.sql` |
-| Vector database (create + read/update/delete) | `scheme_embeddings`, `database/vector/*.py`, Smart Search |
+| Vector database (create + read/update/delete) | `scheme_embeddings`, `database/vector/*.py`, Smart Search, **Admin → Vector Embeddings** (`/admin/embeddings`) |
 | Authentication | bcrypt hashes, signed `httpOnly` session cookie |
 | Authorization | 5 database roles with table and column grants (`09`–`17`), Row-Level Security (`19`), role checks on every API route |
 | Transactions and locking | `FOR UPDATE` in submit and status-change routes |

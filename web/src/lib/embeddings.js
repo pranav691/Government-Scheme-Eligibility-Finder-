@@ -20,6 +20,35 @@ Benefits: ${s.benefit_summary || ""}
 }
 
 /**
+ * Ask the Python embedding service for the 384-number vector of a text.
+ * Returns null if the service is not running or answers badly.
+ */
+export async function embedText(text) {
+  try {
+    const response = await fetch(`${EMBEDDING_SERVICE_URL}/embed`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+      cache: "no-store",
+      signal: AbortSignal.timeout(15000),
+    });
+
+    if (!response.ok) return null;
+
+    const data = await response.json();
+
+    if (!Array.isArray(data.embedding) || data.embedding.length !== 384) {
+      return null;
+    }
+
+    return data.embedding;
+  } catch (error) {
+    console.error("Embedding request failed:", error.message);
+    return null;
+  }
+}
+
+/**
  * Re-create the semantic-search vector for one scheme after an admin
  * creates or edits it. Best effort: if the Python embedding service is not
  * running, the scheme is still saved and `false` is returned (run
@@ -53,21 +82,9 @@ export async function refreshSchemeEmbedding(schemeCode) {
 
     const text = buildSearchableText(scheme);
 
-    const response = await fetch(`${EMBEDDING_SERVICE_URL}/embed`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text }),
-      cache: "no-store",
-      signal: AbortSignal.timeout(15000),
-    });
+    const vector = await embedText(text);
 
-    if (!response.ok) return false;
-
-    const data = await response.json();
-
-    if (!Array.isArray(data.embedding) || data.embedding.length !== 384) {
-      return false;
-    }
+    if (!vector) return false;
 
     await adminPool.query(
       `
@@ -79,7 +96,7 @@ export async function refreshSchemeEmbedding(schemeCode) {
             embedding = EXCLUDED.embedding,
             updated_at = CURRENT_TIMESTAMP
       `,
-      [scheme.scheme_id, text, `[${data.embedding.join(",")}]`]
+      [scheme.scheme_id, text, `[${vector.join(",")}]`]
     );
 
     return true;

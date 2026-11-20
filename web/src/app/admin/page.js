@@ -95,6 +95,19 @@ async function AdminContent() {
                 </p>
             </Link>
 
+            <Link
+                href="/admin/embeddings"
+                className="rounded-2xl border border-slate-800 p-6 transition hover:border-teal-400 hover:bg-slate-800/50"
+            >
+                <h2 className="text-xl font-semibold">
+                    Vector Embeddings
+                </h2>
+
+                <p className="mt-2 text-sm text-slate-400">
+                    Read, update and delete the pgvector search data.
+                </p>
+            </Link>
+
           </div>
 
         </div>
