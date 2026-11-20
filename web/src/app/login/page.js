@@ -129,6 +129,16 @@ export default function LoginPage() {
             </button>
           </form>
 
+          <p className="mt-6 text-center text-sm text-slate-400">
+            New student?{" "}
+            <a
+              href="/register"
+              className="font-semibold text-teal-400 hover:text-teal-300"
+            >
+              Create an account
+            </a>
+          </p>
+
           <div className="mt-6 rounded-xl bg-slate-950/60 p-4 text-xs leading-5 text-slate-400">
             Demo student:
             <br />

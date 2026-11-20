@@ -45,6 +45,11 @@ GRANT SELECT ON TABLE
     user_profiles
 TO scheme_admin_app;
 
+-- Admin can delete a user (Admin > Users > Delete). Row-Level Security
+-- (19_row_level_security.sql) refuses to delete admin accounts, and the
+-- foreign keys refuse users who still have applications.
+GRANT DELETE ON TABLE users TO scheme_admin_app;
+
 -- Admin can manage the scheme catalogue.
 GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE
     schemes,

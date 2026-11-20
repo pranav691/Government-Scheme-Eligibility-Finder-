@@ -74,6 +74,22 @@ CREATE POLICY users_student_own ON users
     FOR SELECT TO scheme_student_app
     USING (user_id = app_current_user_id());
 
+-- Self-registration can only ever create a STUDENT account (role_id 2),
+-- even if the web code had a bug.
+DROP POLICY IF EXISTS users_auth_register_student ON users;
+
+CREATE POLICY users_auth_register_student ON users
+    FOR INSERT TO scheme_auth_reader
+    WITH CHECK (role_id = 2);
+
+-- The admin role may delete student and officer accounts, never an
+-- admin account (role_id 1).
+DROP POLICY IF EXISTS users_admin_delete ON users;
+
+CREATE POLICY users_admin_delete ON users
+    FOR DELETE TO scheme_admin_app
+    USING (role_id <> 1);
+
 
 -- ============================================================
 -- 3. USER_PROFILES

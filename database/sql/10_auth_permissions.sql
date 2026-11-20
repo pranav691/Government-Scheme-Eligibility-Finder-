@@ -58,6 +58,20 @@ ON users
 TO scheme_auth_reader;
 
 
+-- Self-registration ("Create account" page): a new user may be inserted
+-- with only these columns. user_id, is_active and created_at use their
+-- defaults. Row-Level Security (19_row_level_security.sql) additionally
+-- limits this role to creating STUDENT accounts.
+GRANT INSERT (
+    role_id,
+    full_name,
+    email,
+    password_hash
+)
+ON users
+TO scheme_auth_reader;
+
+
 -- Needed to determine student/officer/admin role.
 GRANT SELECT (
     role_id,

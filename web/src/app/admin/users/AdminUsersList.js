@@ -8,6 +8,10 @@ export default function AdminUsersList() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  const [deletingId, setDeletingId] = useState(null);
+
+  const [refreshKey, setRefreshKey] = useState(0);
+
   useEffect(() => {
     async function loadUsers() {
       try {
@@ -32,7 +36,38 @@ export default function AdminUsersList() {
     }
 
     loadUsers();
-  }, []);
+  }, [refreshKey]);
+
+  async function deleteUser(user) {
+    const confirmed = window.confirm(
+      `Delete ${user.role_name} "${user.full_name}" (${user.email})? Their profile will be removed too. This cannot be undone.`
+    );
+
+    if (!confirmed) return;
+
+    setDeletingId(user.user_id);
+    setError("");
+
+    try {
+      const response = await fetch(`/api/admin/users/${user.user_id}`, {
+        method: "DELETE",
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || "Unable to delete user.");
+        return;
+      }
+
+      setRefreshKey((key) => key + 1);
+    } catch (error) {
+      console.error(error);
+      setError("Unable to delete user.");
+    } finally {
+      setDeletingId(null);
+    }
+  }
 
   if (loading) {
     return (
@@ -85,6 +120,7 @@ export default function AdminUsersList() {
                 <th className="px-5 py-4">Role</th>
                 <th className="px-5 py-4">Status</th>
                 <th className="px-5 py-4">Created</th>
+                <th className="px-5 py-4">Actions</th>
               </tr>
             </thead>
 
@@ -124,6 +160,20 @@ export default function AdminUsersList() {
 
                   <td className="px-5 py-4 text-slate-400">
                     {new Date(user.created_at).toLocaleString()}
+                  </td>
+
+                  <td className="px-5 py-4">
+                    {user.role_name !== "admin" && (
+                      <button
+                        onClick={() => deleteUser(user)}
+                        disabled={deletingId === user.user_id}
+                        className="rounded-xl border border-red-500/40 px-3 py-1 text-xs font-semibold text-red-300 hover:bg-red-500/10 disabled:opacity-60"
+                      >
+                        {deletingId === user.user_id
+                          ? "Deleting..."
+                          : "Delete"}
+                      </button>
+                    )}
                   </td>
                 </tr>
               ))}

@@ -267,9 +267,11 @@ Connect as `scheme_user` to `scheme_finder` and run, **in this order**:
 `06` and `07` are demonstration scripts and can be run at any time.
 
 **Updating a database created from an older version of these scripts:** pull the
-latest files, then re-run `08_advanced_sql.sql`, `13_student_application_permissions.sql`,
-`16_admin_permissions.sql` and `19_row_level_security.sql` (in that order). All four
-are safe to re-run, and afterwards the database is identical to a fresh build.
+latest files, then re-run `08_advanced_sql.sql`, `10_auth_permissions.sql`,
+`13_student_application_permissions.sql`, `16_admin_permissions.sql` and
+`19_row_level_security.sql` (in that order). All five are safe to re-run, and afterwards
+the database is identical to a fresh build. (`10` adds student self-registration,
+`16` + `19` add admin user deletion.)
 
 **Give each login role a password** (use your own values, and put the same
 values in `web/.env.local`):
